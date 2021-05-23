@@ -22,6 +22,12 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
+            .copyright{
+                background: yellow;
+            }
+            .footer{
+                background: darkorange;
+            }
         </style>
         @yield('scripts')
     </head>
@@ -57,7 +63,7 @@
             @yield('news')
                 </div>
         <p>footer</p>
-    <div class="d-flex justify-content-between">
+    <div class="d-flex justify-content-between footer">
         <div>
             <ul>
                 <li>home</li>
@@ -76,6 +82,9 @@
                 <li>over ons</li>
             </ul>
         </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright 2021 © | ontwerp: ‘tIdee! | realisatie: Xxxxx | Disclaimer</p>
     </div>
     </body>
 </html>
