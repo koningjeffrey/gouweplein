@@ -1,0 +1,136 @@
+body {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+h2{
+    font-size: 2.2rem;
+}
+.copyright{
+    font-size: 0.8rem;
+    background: yellow;
+}
+.footer{
+    background: darkorange;
+    color: #fff;
+}
+.footer ul{
+    list-style: none;
+}
+.footer ul li a{
+    color: #fff;
+}
+nav{
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    min-height: 80px;
+}
+//nav ul li a{
+//    color: ;
+//}
+
+.logo{
+    position: relative;
+    z-index: 1;
+    height: 100px;
+}
+.logo img{
+    border-style: none;
+    padding-top: 5px;
+    height: 150px;
+}
+.title-menu h1{
+    padding-left: 40px;
+}
+.nav-links li{
+    list-style: none;
+    padding-right: 20px;
+}
+.nav-links ul{
+    padding: 0px !important;
+    text-decoration: none;
+}
+.title-menu li ul a{
+    padding: 0px;
+    text-decoration: none;
+    color: #8bcdbd !important;
+}
+.footer-title{
+    right: 0px;
+    bottom: 0px;
+}
+.footer .footer-logo{
+    position: relative;
+    z-index: 1;
+    margin-top: -30px;
+}
+.social i {
+    font-size: 2rem;
+    padding: 5px;
+}
+.footer-logo img{
+    border-style: none;
+    padding-top: 5px;
+    height: 150px;
+}
+
+// front
+.intro{
+    background: #1b4b72;
+}
+/*.carousel-inner{*/
+/*    margin-top: 80px;*/
+/*    min-width: 100%;*/
+/*    height: 500px;*/
+/*    overflow: hidden;*/
+/*}*/
+.intro{
+    padding: 20px;
+    color: #fff;
+    background-color:#8bcdbd;
+}
+.intro-body p{
+    color: #298b6e;
+}
+
+.usp{
+    padding: 40px;
+}
+.na-box {
+    padding: 40px;
+    background-color: #e6f4f0;
+}
+.na2-box{
+
+}
+.d-box{
+    padding: 40px;
+}
+.i-box img{
+    width: 100%;
+    max-height: 100px;
+    overflow: hidden;
+}
+.slider{
+    margin-top: 80px;
+}
+.slider .col-xl-6{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.slider-text{
+    background-color: #aee4ea;
+    padding: 40px !important;
+}
+.slider-nav{
+    width: 140px;
+}
+.slider-text img{
+    height: 200px;
+}
+.slider-nav{
+    color: #fff;
+}
+.slider-nav#active{
+    color: #000000;
+}

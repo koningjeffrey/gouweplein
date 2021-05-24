@@ -12,6 +12,8 @@
         <link href="https://fonts.google.com/specimen/Roboto" rel="stylesheet">
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
         @yield('scripts')
 
         <!-- Styles -->
@@ -21,81 +23,7 @@
     </head>
     <body>
     <style>
-        body {
-            font-size: 1.2rem;
-            font-family: 'Roboto', sans-serif;
-        }
-        h2{
-            font-size: 2.2rem;
-        }
-        .copyright{
-            font-size: 0.8rem;
-            background: yellow;
-        }
-        .footer{
-            background: darkorange;
-            color: #fff;
-        }
-        .footer ul{
-            list-style: none;
-        }
-        .footer ul li a{
-            color: #fff;
-        }
-        nav{
-            position: absolute;
-            width: 100%;
-            align-items: center;
-            min-height: 80px;
-        }
-        nav ul li a{
-            color: ;
-        }
 
-        .logo{
-            position: relative;
-            z-index: 1;
-            height: 100px;
-        }
-        .logo img{
-            border-style: none;
-            padding-top: 5px;
-            height: 150px;
-        }
-        .title-menu h1{
-            padding-left: 40px;
-        }
-        .nav-links li{
-            list-style: none;
-            padding-right: 20px;
-        }
-        .nav-links ul{
-            padding: 0px !important;
-            text-decoration: none;
-        }
-        .title-menu li ul a{
-            padding: 0px;
-            text-decoration: none;
-            color: #8bcdbd !important;
-        }
-        .footer-title{
-            right: 0px;
-            bottom: 0px;
-        }
-        .footer .footer-logo{
-            position: relative;
-            z-index: 1;
-            margin-top: -30px;
-        }
-        .social i {
-            font-size: 2rem;
-            padding: 5px;
-        }
-        .footer-logo img{
-            border-style: none;
-            padding-top: 5px;
-            height: 150px;
-        }
     </style>
 <nav>
     <div class="container d-flex justify-content-start">
