@@ -19,8 +19,20 @@
         </style>
 
         <style>
+            @font-face {
+                font-family: JotRegular;
+                src: url('/fonts/JotRegular.tff') format('tff');
+            }
+            @font-face {
+                font-family: Roboto;
+                src: url('/fonts/Roboto-Regular.tff') format('tff');
+            }
             body {
-                font-family: 'Nunito', sans-serif;
+                font-size: 1.2rem;
+                font-family: 'Roboto', sans-serif;
+            }
+            h2{
+                font-size: 2.2rem;
             }
             .copyright{
                 background: yellow;
@@ -28,21 +40,61 @@
             .footer{
                 background: darkorange;
             }
+            nav{
+                position: absolute;
+                width: 100%;
+                align-items: center;
+                min-height: 80px;
+            }
+            /*.nav-links{*/
+            /*    display: flex;*/
+            /*    justify-content: space-around;*/
+            /*}*/
+            .logo{
+                position: relative;
+                z-index: 1;
+                height: 100px;
+            }
+            .logo img{
+                border-style: none;
+                padding-top: 5px;
+                height: 150px;
+            }
+            .title-menu h1{
+                padding-left: 20px;
+            }
+            .nav-links li{
+                list-style: none;
+                padding-right: 20px;
+            }
+            .nav-links a{
+                text-decoration: none;
+            }
         </style>
         @yield('scripts')
     </head>
     <body>
-    <p>header</p>
-    <img src="/img/gouweplein_logo.jpg" alt="">
-    <h1>CentrumWaddinxveen</h1>
-    <ul>
-        <li>winkels</li>
-        <li>plattegrond</li>
-        <li>nieuws & agenda</li>
-        <li>bereikbaarheid</li>
-        <li>over gouweplein</li>
-        <li>Contact</li>
-    </ul>
+<nav>
+    <div class="container d-flex justify-content-start">
+    <div class="logo">
+        <img src="/img/gouweplein_logo_clear.png" alt="">
+    </div>
+    <div class="title-menu">
+        <h1>Centrum Waddinxveen</h1>
+        <ul class="nav-links d-flex justify-content-between">
+            <li><a href="">winkels</a></li>
+            <li><a href="">plattegrond</a></li>
+            <li><a href="">nieuws & agenda</a></li>
+            <li><a href="">bereikbaarheid</a></li>
+            <li><a href="">over gouweplein</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="burger">
+
+    </div>
+</nav>
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
 {{--            @if (Route::has('login'))--}}
 {{--                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">--}}
