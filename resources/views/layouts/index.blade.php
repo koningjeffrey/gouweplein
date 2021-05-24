@@ -11,14 +11,15 @@
         <link href="https://fonts.google.com/specimen/Roboto" rel="stylesheet">
         <link href="https://fonts.google.com/specimen/Roboto" rel="stylesheet">
         <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script>
+        <script src="{{ asset('js/app.js') }}"></script>
+        <script src="{{ asset('js/custom.js') }}"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
         @yield('scripts')
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ asset('css/styles.css') }}" rel="stylesheet" type="text/css" >
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" >
 
     </head>
     <body>
@@ -41,10 +42,13 @@
             <li><a href="/contact">Contact</a></li>
         </ul>
     </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </div>
-    <div class="burger">
 
-    </div>
 </nav>
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
 {{--            @if (Route::has('login'))--}}

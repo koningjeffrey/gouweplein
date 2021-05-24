@@ -1,28 +1,87 @@
 @extends('layouts.index')
 @section('scripts')
     <script>
+
         console.log('bacon');
+        let currentSlide;
+        let selectedSlide = 1;
+        let totalSlides = 4;
         $(document).ready(function () {
-            alert('kaas')
+
         })
+        // $('.logo').onclick(function () {
+        //     alert('click')
+        // })
+        function changeSlide(selectedSlide){
+            alert('.slide'+selectedSlide)
+            $('.slide'+currentSlide).hide();
+            $('.slide'+selectedSlide).show();
+            // $('.slide'+currentSlide).parent('item').removeClass('active');
+            //
+            // $('.slide'+(selectedSlide)).parent('item').addClass('active');
+        }
     </script>
     @endsection
 @section('content')
     <style>
-        
-    </style>
-    <div class="cookies">
-        <div class="d-flex justify-content-center align-items-center">
+        .slider-nav .active{
+            color: #1b1e21;
+        }
+        .slider-image .item img{
+            display: block;
+            width: 100%;
+        }
+        .slider-image .item{
+            display: none;
+        }
+        .slider-image .item.active{
+            display: block;
+        }
 
-        </div>
-    </div>
+    </style>
+{{--    <style>--}}
+{{--        .cookies{--}}
+{{--            position:fixed;--}}
+{{--            z-index: 5;--}}
+{{--            /*display:none;*/--}}
+
+{{--            /* color with alpha channel */--}}
+{{--            background-color: rgba(0, 0, 0, 0.7); /* 0.7 = 70% opacity */--}}
+
+{{--            /* stretch to screen edges */--}}
+{{--            top: 0;--}}
+{{--            left: 0;--}}
+{{--            bottom: 0;--}}
+{{--            right: 0;--}}
+{{--        }--}}
+{{--        .popup{--}}
+{{--            background-color: #fff;--}}
+{{--            width: 200px;--}}
+{{--            height: 200px;--}}
+{{--        }--}}
+{{--    </style>--}}
+{{--    <div class="cookies">--}}
+{{--        <div class="d-flex justify-content-center">--}}
+{{--            <div class="popup align-content-center">--}}
+{{--                <p>fhduifshiufghuosdghfd</p>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
     <div class="slider row">
         <div class="col-xl-6 col-sm-12 slider-image">
             <div class="slides d-flex justify-content-center align-items-center">
-                <img class="d-block w-100" src="/img/Ammerlaanbakker_.jpg" alt="First slide" id="slide1">
-                <img class="d-block w-100" src="/img/Ammerlaanbakker_.jpg" alt="Second slide" id="slide2">
-                <img class="d-block w-100" src="/img/Ammerlaanbakker_.jpg" alt="Third slide" id="slide3">
-                <img class="d-block w-100" src="/img/Ammerlaanbakker_.jpg" alt="Fourth slide" id="slide4">
+                <div class="item active">
+                <img class="" src="/img/Ammerlaanbakker_.jpg" alt="First slide" id="slide1">
+                </div>
+                <div class="item">
+                    <img class="d-block w-100" src="/img/Ammerlaan_Bakker.png" alt="Second slide" id="slide2">
+                </div>
+                <div class="item">
+                    <img class="d-block w-100" src="/img/de kaashakker exterieur.png" alt="Third slide" id="slide3">
+                </div>
+                <div class="item">
+                    <img class="d-block w-100" src="/img/Gall&Gall_ex.png" alt="Fourth slide" id="slide4">
+                </div>
             </div>
         </div>
         <div class="col-xl-6 col-sm-12 slider-text text-center">
@@ -31,10 +90,10 @@
             <h3>Lache om vitamines</h3>
             <div class="d-flex justify-content-center">
                 <div class="d-flex justify-content-between slider-nav">
-                <i class="fas fa-heart" id="s1 active"></i>
-                <i class="fas fa-heart" id="s2"></i>
-                <i class="fas fa-heart" id="s3"></i>
-                <i class="fas fa-heart" id="s4"></i>
+                <i class="fas fa-heart active" id="s1" onclick="changeSlide(1)"></i>
+                <i class="fas fa-heart" id="s2" onclick="changeSlide(2)"></i>
+                <i class="fas fa-heart" id="s3" onclick="changeSlide(3)"></i>
+                <i class="fas fa-heart" id="s4" onclick="changeSlide(4)"></i>
                 </div>
             </div>
         </div>
