@@ -4,16 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Gouweplein</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
         <link href="https://fonts.google.com/specimen/Roboto" rel="stylesheet">
-        <link href="https://fonts.google.com/specimen/Roboto" rel="stylesheet">
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}"></script>
         <script src="{{ asset('js/custom.js') }}"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+{{--        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>--}}
 
         @yield('scripts')
 
@@ -23,47 +22,31 @@
 
     </head>
     <body>
-    <style>
 
-    </style>
 <nav>
     <div class="container d-flex justify-content-start">
     <div class="logo">
-        <img src="/img/gouweplein_logo_clear.png" alt="">
+        <a href="/"><img src="/img/gouweplein_logo_clear.png" alt=""></a>
     </div>
     <div class="title-menu">
         <h1>Centrum Waddinxveen</h1>
-        <ul class="nav-links d-flex justify-content-between">
+        <ul class="nav-links d-flex justify-content-between" id="nav-links">
             <li><a href="/stores">winkels</a></li>
             <li><a href="/map">plattegrond</a></li>
             <li><a href="/news">nieuws & agenda</a></li>
-            <li><a href="/accessability">bereikbaarheid</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">bereikbaarheid</a></li>
             <li><a href="/about">over gouweplein</a></li>
             <li><a href="/contact">Contact</a></li>
         </ul>
     </div>
-        <div class="burger">
+        <div class="burger" id="toggleNav">
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
         </div>
     </div>
-
 </nav>
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-{{--            @if (Route::has('login'))--}}
-{{--                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">--}}
-{{--                    @auth--}}
-{{--                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>--}}
-{{--                    @else--}}
-{{--                        <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Log in</a>--}}
-
-{{--                        @if (Route::has('register'))--}}
-{{--                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>--}}
-{{--                        @endif--}}
-{{--                    @endauth--}}
-{{--                </div>--}}
-{{--            @endif--}}
             @yield('content')
             @yield('usp')
             @yield('intro')
@@ -105,5 +88,10 @@
     <div class="copyright">
         <p>Copyright 2021 © | ontwerp: ‘tIdee! | realisatie: Xxxxx | Disclaimer</p>
     </div>
+<script>
+    $("#toggleNav").click(function() {
+        $("#nav-links li").toggle('display')
+    });
+</script>
     </body>
 </html>

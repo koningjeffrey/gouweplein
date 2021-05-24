@@ -16131,6 +16131,18 @@ readers do not read off random characters that represent icons */
   width: auto;
 }
 
+@font-face {
+  font-family: JotRegular;
+  src: local("/fonts/JotRegular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: local("/fonts/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   font-size: 1.2rem;
   font-family: "Roboto", sans-serif;
@@ -16138,6 +16150,7 @@ body {
 
 h2 {
   font-size: 2.2rem;
+  font-family: JotRegular;
 }
 
 .copyright {
@@ -16163,6 +16176,10 @@ nav {
   width: 100%;
   align-items: center;
   min-height: 80px;
+}
+
+nav ul li {
+  color: #8bcdbd;
 }
 
 .logo {
@@ -16295,8 +16312,29 @@ nav {
   color: #fff;
 }
 
-.slider-nav #active {
-  color: #000000;
+.slider .item {
+  height: 400px;
+}
+
+.slider .item img {
+  height: 100%;
+  overflow: hidden;
+}
+
+#slide1 {
+  display: block;
+}
+
+#slide2 {
+  display: none;
+}
+
+#slide3 {
+  display: none;
+}
+
+#slide4 {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -16314,8 +16352,14 @@ nav {
   }
 
   .nav-links li {
+    display: none;
     padding: 20px;
     background: #1f6fb2;
     z-index: 5;
+    color: #fff;
+  }
+
+  .nav-active {
+    background: #fff;
   }
 }

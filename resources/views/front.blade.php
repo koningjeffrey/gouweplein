@@ -3,7 +3,7 @@
     <script>
 
         console.log('bacon');
-        let currentSlide;
+        let currentSlide = 1;
         let selectedSlide = 1;
         let totalSlides = 4;
         $(document).ready(function () {
@@ -13,12 +13,11 @@
         //     alert('click')
         // })
         function changeSlide(selectedSlide){
-            alert('.slide'+selectedSlide)
-            $('.slide'+currentSlide).hide();
-            $('.slide'+selectedSlide).show();
-            // $('.slide'+currentSlide).parent('item').removeClass('active');
-            //
-            // $('.slide'+(selectedSlide)).parent('item').addClass('active');
+            $('#slide'+currentSlide).toggle();
+            $('#slide'+selectedSlide).toggle();
+            $('#s'+currentSlide).removeClass('active');
+            $('#s'+selectedSlide).addClass('active');
+            currentSlide = selectedSlide;
         }
     </script>
     @endsection
@@ -31,12 +30,12 @@
             display: block;
             width: 100%;
         }
-        .slider-image .item{
-            display: none;
-        }
-        .slider-image .item.active{
-            display: block;
-        }
+        /*.slider-image .item{*/
+        /*    display: none;*/
+        /*}*/
+        /*.slider-image .item.active{*/
+        /*    display: block;*/
+        /*}*/
 
     </style>
 {{--    <style>--}}
@@ -70,17 +69,17 @@
     <div class="slider row">
         <div class="col-xl-6 col-sm-12 slider-image">
             <div class="slides d-flex justify-content-center align-items-center">
-                <div class="item active">
-                <img class="" src="/img/Ammerlaanbakker_.jpg" alt="First slide" id="slide1">
+                <div class="item">
+                <img src="/img/AVEQ050915_0336TH.jpg" alt="First slide" id="slide1">
                 </div>
                 <div class="item">
-                    <img class="d-block w-100" src="/img/Ammerlaan_Bakker.png" alt="Second slide" id="slide2">
+                    <img src="/img/Ammerlaan_Bakker.png" alt="Second slide" id="slide2">
                 </div>
                 <div class="item">
-                    <img class="d-block w-100" src="/img/de kaashakker exterieur.png" alt="Third slide" id="slide3">
+                    <img src="/img/de kaashakker exterieur.png" alt="Third slide" id="slide3">
                 </div>
                 <div class="item">
-                    <img class="d-block w-100" src="/img/Gall&Gall_ex.png" alt="Fourth slide" id="slide4">
+                    <img src="/img/Gall&Gall_ex.png" alt="Fourth slide" id="slide4">
                 </div>
             </div>
         </div>
