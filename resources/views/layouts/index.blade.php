@@ -105,12 +105,12 @@
     <div class="title-menu">
         <h1>Centrum Waddinxveen</h1>
         <ul class="nav-links d-flex justify-content-between">
-            <li><a href="">winkels</a></li>
-            <li><a href="">plattegrond</a></li>
-            <li><a href="">nieuws & agenda</a></li>
-            <li><a href="">bereikbaarheid</a></li>
-            <li><a href="">over gouweplein</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="/stores">winkels</a></li>
+            <li><a href="/map">plattegrond</a></li>
+            <li><a href="/news">nieuws & agenda</a></li>
+            <li><a href="/accessability">bereikbaarheid</a></li>
+            <li><a href="/about">over gouweplein</a></li>
+            <li><a href="/contact">Contact</a></li>
         </ul>
     </div>
     </div>
