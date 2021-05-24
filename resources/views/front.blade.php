@@ -5,7 +5,6 @@
     </script>
     @endsection
 @section('content')
-{{--needs to be added to app.css but this is quicker for now without run npm watch--}}
     <style>
         .intro{
             background: #1b4b72;
@@ -21,13 +20,10 @@
             color: #fff;
             background-color:#8bcdbd;
         }
-        /*.intro h2{*/
-        /*    font-size: 2.4rem;*/
-        /*}*/
-        /*.intro-body{*/
-        /*    font-size: 1.2rem;*/
-        /*    color: #298b6e;*/
-        /*}*/
+        .intro-body p{
+            color: #298b6e;
+        }
+
         .usp{
             padding: 40px;
         }
@@ -47,10 +43,6 @@
             overflow: hidden;
         }
     </style>
-{{--                   <p>slider</p>--}}
-{{--                   <div class="d-flex justify-content-center">--}}
-{{--                   <img src="/img/613940.jpg" alt="">--}}
-{{--                   </div>--}}
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
