@@ -31,11 +31,11 @@
     </div>
     <div class="container">
         <div class="row">
-            @foreach($stores as $key => $store)
+            @foreach($stores as $id => $store)
             <div class="col-xl-4 col-md-6 col-sm-12">
                 <div class="thumbnail-img">
                     <div class="store-name">{{$store}}</div>
-                    <a href="/stores/{{$store}}"><img src="/img/{{$store}}.png" alt=""></a>
+                    <a href="/stores/{{$id}}"><img src="/img/{{$store}}.png" alt=""></a>
                 </div>
             </div>
             @endforeach
