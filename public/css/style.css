@@ -59,6 +59,7 @@ nav ul li {
   border-style: none;
   padding-top: 5px;
   height: 150px;
+  -webkit-filter: drop-shadow(2px 2px 2px #222);
 }
 
 .title-menu h1 {
@@ -101,6 +102,7 @@ nav ul li {
   border-style: none;
   padding-top: 5px;
   height: 150px;
+  -webkit-filter: drop-shadow(2px 2px 2px #222);
 }
 
 .burger {
@@ -173,6 +175,7 @@ nav ul li {
 
 .slider-text img {
   height: 200px;
+  -webkit-filter: drop-shadow(2px 2px 2px #222);
 }
 
 .slider-nav {
