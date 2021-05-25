@@ -18,6 +18,15 @@
             $('#s'+currentSlide).removeClass('active');
             $('#s'+selectedSlide).addClass('active');
             currentSlide = selectedSlide;
+            if(currentSlide == '.slide'+1){
+                $('.slider-text').css({'background-color':'#aee4ea'})
+            }else if('.slide'+2){
+                $('.slider-text').css({'background-color':'#ffa81e'})
+            }else if('.slide'+3){
+                $('.slider-text').css({'background-color':'#7cffbb'})
+            }else if('.slide'+4){
+                $('.slider-text').css({'background-color':'#bba2ff'})
+            }
         }
     </script>
     @endsection
@@ -68,7 +77,7 @@
             </div>
         </div>
         <div class="col-xl-6 col-sm-12 slider-text text-center">
-            <img src="/img/gouweplein_logo_clear.png">
+            <img src="/img/gouweplein_logo_clear.png" class="gp-logo">
             <h2>Shake it!</h2>
             <h3>Lache om vitamines</h3>
             <div class="d-flex justify-content-center">

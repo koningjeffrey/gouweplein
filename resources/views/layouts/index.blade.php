@@ -26,7 +26,7 @@
 <nav>
     <div class="container d-flex justify-content-start">
     <div class="logo">
-        <a href="/"><img src="/img/gouweplein_logo_clear.png" alt=""></a>
+        <a href="/"><img src="/img/gouweplein_logo_clear.png" alt="" class="gp-logo"></a>
     </div>
     <div class="title-menu">
         <h1>Centrum Waddinxveen</h1>
@@ -72,7 +72,7 @@
             </ul>
         </div>
         <div class="footer-logo">
-            <img src="/img/gouweplein_logo_clear.png" alt="">
+            <img src="/img/gouweplein_logo_clear.png" alt="" class="gp-logo">
         </div>
         <div class="social-title">
             <div class="social d-flex justify-content-end">
