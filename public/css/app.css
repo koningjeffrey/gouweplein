@@ -16337,6 +16337,19 @@ nav ul li {
   display: none;
 }
 
+.slider-nav i {
+  cursor: pointer;
+}
+
+.slider-nav .active {
+  color: #1b1e21;
+}
+
+.slider-image .item img {
+  display: block;
+  width: 100%;
+}
+
 @media screen and (max-width: 768px) {
   .burger {
     display: block;

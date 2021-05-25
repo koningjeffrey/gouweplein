@@ -154,7 +154,7 @@ nav ul li {
 .slider-nav{
     color: #fff;
 }
-// should change class
+// should change class instead of 4 id's
 .slider .item{
     height: 400px;
 }
@@ -173,6 +173,16 @@ nav ul li {
 }
 #slide4{
    display: none;
+}
+.slider-nav i{
+    cursor: pointer;
+}
+.slider-nav .active{
+    color: #1b1e21;
+}
+.slider-image .item img{
+    display: block;
+    width: 100%;
 }
 
 @media screen and (max-width:768px) {

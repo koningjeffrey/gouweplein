@@ -22,22 +22,6 @@
     </script>
     @endsection
 @section('content')
-    <style>
-        .slider-nav .active{
-            color: #1b1e21;
-        }
-        .slider-image .item img{
-            display: block;
-            width: 100%;
-        }
-        /*.slider-image .item{*/
-        /*    display: none;*/
-        /*}*/
-        /*.slider-image .item.active{*/
-        /*    display: block;*/
-        /*}*/
-
-    </style>
 {{--    <style>--}}
 {{--        .cookies{--}}
 {{--            position:fixed;--}}
@@ -89,10 +73,10 @@
             <h3>Lache om vitamines</h3>
             <div class="d-flex justify-content-center">
                 <div class="d-flex justify-content-between slider-nav">
-                <i class="fas fa-heart active" id="s1" onclick="changeSlide(1)"></i>
-                <i class="fas fa-heart" id="s2" onclick="changeSlide(2)"></i>
-                <i class="fas fa-heart" id="s3" onclick="changeSlide(3)"></i>
-                <i class="fas fa-heart" id="s4" onclick="changeSlide(4)"></i>
+                <i class="pointer fas fa-heart active" id="s1" onclick="changeSlide(1)"></i>
+                <i class="pointer fas fa-heart" id="s2" onclick="changeSlide(2)"></i>
+                <i class="pointer fas fa-heart" id="s3" onclick="changeSlide(3)"></i>
+                <i class="pointer fas fa-heart" id="s4" onclick="changeSlide(4)"></i>
                 </div>
             </div>
         </div>
