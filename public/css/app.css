@@ -16308,6 +16308,7 @@ nav ul li {
 
 .slider-nav {
   width: 140px;
+  color: #fff;
 }
 
 .slider-text img {
@@ -16319,8 +16320,9 @@ nav ul li {
   color: #fff;
 }
 
-.slider-nav {
-  color: #fff;
+.d-slider-nav {
+  width: 140px;
+  color: #a2ffad;
 }
 
 .slider .item {
@@ -16353,6 +16355,14 @@ nav ul li {
 }
 
 .slider-nav .active {
+  color: #1b1e21;
+}
+
+.d-slider-nav i {
+  cursor: pointer;
+}
+
+.d-slider-nav .active {
   color: #1b1e21;
 }
 

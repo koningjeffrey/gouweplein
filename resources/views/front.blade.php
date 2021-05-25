@@ -170,6 +170,14 @@
                    Sequi nost, verepudit ullupta aut laborem
                    volor aut vollo cone ped est, to imolluptatem
                </p>
+                <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-between d-slider-nav">
+                        <i class="pointer fas fa-heart active" id="s1" onclick="changeSlide(1)"></i>
+                        <i class="pointer fas fa-heart" id="s2" onclick="changeSlide(2)"></i>
+                        <i class="pointer fas fa-heart" id="s3" onclick="changeSlide(3)"></i>
+                        <i class="pointer fas fa-heart" id="s4" onclick="changeSlide(4)"></i>
+                    </div>
+                </div>
             </div>
             <div class="i-box">
                 <img src="/img/613940.jpg" alt="">

@@ -151,6 +151,7 @@ nav ul li {
 }
 .slider-nav{
     width: 140px;
+    color: #fff;
 }
 .slider-text img{
     height: 200px;
@@ -159,8 +160,9 @@ nav ul li {
 .slider-text h2{
     color: #fff;
 }
-.slider-nav{
-    color: #fff;
+.d-slider-nav{
+    width: 140px;
+    color: #a2ffad;
 }
 // should change class instead of 4 id's
 .slider .item{
@@ -186,6 +188,12 @@ nav ul li {
     cursor: pointer;
 }
 .slider-nav .active{
+    color: #1b1e21;
+}
+.d-slider-nav i{
+    cursor: pointer;
+}
+.d-slider-nav .active{
     color: #1b1e21;
 }
 .slider-image .item img{

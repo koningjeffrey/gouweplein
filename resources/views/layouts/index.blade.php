@@ -91,7 +91,7 @@
     <div class="copyright">
         <p>Copyright 2021 © | ontwerp: ‘tIdee! | realisatie: Xxxxx | Disclaimer</p>
     </div>
-</div>>
+</div>
 <script>
     $("#toggleNav").click(function() {
         $("#nav-links li").toggle('display')
