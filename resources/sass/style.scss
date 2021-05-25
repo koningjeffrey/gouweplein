@@ -20,6 +20,7 @@ h2{
     font-family: JotRegular;
 }
 .copyright{
+    padding-left: 40px;
     font-size: 0.8rem;
     background: yellow;
 }
@@ -79,9 +80,18 @@ nav ul li {
     z-index: 1;
     margin-top: -30px;
 }
+.social{
+    padding-right: 40px;
+}
 .social i {
     font-size: 2rem;
-    padding: 5px;
+    padding: 10px;
+}
+.row{
+    margin: 0px;
+}
+.footer-title{
+    padding-right: 40px;
 }
 .footer-logo img{
     border-style: none;
@@ -145,6 +155,9 @@ nav ul li {
 .slider-text img{
     height: 200px;
     -webkit-filter: drop-shadow(2px 2px 2px #222 );
+}
+.slider-text h2{
+    color: #fff;
 }
 .slider-nav{
     color: #fff;

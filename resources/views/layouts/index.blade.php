@@ -52,6 +52,7 @@
             @yield('intro')
             @yield('news')
                 </div>
+<div class="container">
     <div class="d-flex justify-content-between footer">
         <div>
             <ul>
@@ -85,9 +86,12 @@
             </div>
         </div>
     </div>
+    </div>
+<div class="container">
     <div class="copyright">
         <p>Copyright 2021 © | ontwerp: ‘tIdee! | realisatie: Xxxxx | Disclaimer</p>
     </div>
+</div>>
 <script>
     $("#toggleNav").click(function() {
         $("#nav-links li").toggle('display')

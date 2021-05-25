@@ -59,6 +59,7 @@
 {{--            </div>--}}
 {{--        </div>--}}
 {{--    </div>--}}
+<div class="container">
     <div class="slider row">
         <div class="col-xl-6 col-sm-12 slider-image">
             <div class="slides d-flex justify-content-center align-items-center">
@@ -90,6 +91,7 @@
             </div>
         </div>
     </div>
+</div>
 {{--<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">--}}
 {{--    <div class="carousel-inner">--}}
 {{--        <div class="carousel-item active">--}}
@@ -135,18 +137,18 @@
     </div>
 @endsection
 @section('intro')
-    <div class="flex-column justify-content-center intro">
-        <div class="container">
-        <div class="d-flex justify-content-start">
-                   <h2>Gouweplein</h2> <h2 style="color:#298b6e;">Centrum Waddinxveen</h2>
-        </div>
-        <div class="intro-body">
-            <p>
-                Een supergezellig, winkelcentrum met alles erop en eraan, waar je even langs kunt wippen voor een
-                boodschapje, maar ook voor een middag winkelen en koffie drinken. Feris ab invene explametur, nobit pe
-                veror aut pere ne eat occusa qui volorenda quae officiur aut aut am asimi, seque prat.
-            </p>
-        </div>
+    <div class="container">
+        <div class="col-12 intro">
+            <div class="d-flex justify-content-start">
+                       <h2>Gouweplein</h2> <h2 style="color:#298b6e;">Centrum Waddinxveen</h2>
+            </div>
+            <div class="intro-body">
+                <p>
+                    Een supergezellig, winkelcentrum met alles erop en eraan, waar je even langs kunt wippen voor een
+                    boodschapje, maar ook voor een middag winkelen en koffie drinken. Feris ab invene explametur, nobit pe
+                    veror aut pere ne eat occusa qui volorenda quae officiur aut aut am asimi, seque prat.
+                </p>
+            </div>
         </div>
     </div>
 @endsection
