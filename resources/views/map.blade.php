@@ -5,65 +5,31 @@
     </script>
     @endsection
 @section('content')
-    <style>
-        .intro{
-            background: #1b4b72;
-        }
-        .carousel-inner{
-            margin-top: 80px;
-            min-width: 100%;
-            height: 500px;
-            overflow: hidden;
-        }
-        .intro{
-            padding: 20px;
-            color: #fff;
-            background-color:#8bcdbd;
-        }
-        .intro-body p{
-            color: #298b6e;
-        }
-
-        .usp{
-            padding: 40px;
-        }
-        .na-box {
-            padding: 40px;
-            background-color: #e6f4f0;
-        }
-        .na2-box{
-
-        }
-        .d-box{
-            padding: 40px;
-        }
-        .i-box img{
-            width: 100%;
-            max-height: 100px;
-            overflow: hidden;
-        }
-    </style>
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="d-block w-100" src="/img/Ammerlaanbakker_.jpg" alt="First slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="/img/613940.jpg" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100" src="/img/613940.jpg" alt="Third slide">
+    <div class="container">
+        <div class="slider row">
+            <div class="col-xl-6 col-sm-12 slider-image">
+                <div class="slides d-flex justify-content-center align-items-center">
+                    <div class="item">
+                        <img src="/img/AVEQ050915_0336TH.jpg" alt="First slide" id="slide1">
+                    </div>
+                    <div class="item">
+                        <img src="/img/Ammerlaan_Bakker.png" alt="Second slide" id="slide2">
+                    </div>
+                    <div class="item">
+                        <img src="/img/de kaashakker exterieur.png" alt="Third slide" id="slide3">
+                    </div>
+                    <div class="item">
+                        <img src="/img/Gall&Gall_ex.png" alt="Fourth slide" id="slide4">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-sm-12 slider-text text-center align-middle">
+                <img src="/img/gouweplein_logo_clear.png" class="gp-logo">
+                <h2>Winkels</h2>
+                <h3>Het Gouweplein heeft een veelzijdig én compleet aanbod. Naast de mode, lifestyle en dagelijkse boodschappen winkels een aanbod van horeca.</h3>
+            </div>
         </div>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
 @endsection
 
 @section('usp')

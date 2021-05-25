@@ -70,7 +70,7 @@
                     <img src="/img/Ammerlaan_Bakker.png" alt="Second slide" id="slide2">
                 </div>
                 <div class="item">
-                    <img src="/img/de kaashakker exterieur.png" alt="Third slide" id="slide3">
+                    <img src="/img/Kees Bakfietsen.png" alt="Third slide" id="slide3">
                 </div>
                 <div class="item">
                     <img src="/img/Gall&Gall_ex.png" alt="Fourth slide" id="slide4">

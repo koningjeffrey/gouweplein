@@ -1,6 +1,6 @@
 @font-face {
   font-family: JotRegular;
-  src: local("/fonts/JotRegular.ttf");
+  src: url(/fonts/JotRegular.ttf?ccf2b1b646eda4367cbcc75d0c159c53);
   font-weight: normal;
   font-style: normal;
 }
@@ -12,12 +12,12 @@
 }
 body {
   font-size: 1.2rem;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, Arial;
 }
 
 h2 {
   font-size: 2.2rem;
-  font-family: JotRegular;
+  font-family: JotRegular, Arial;
 }
 
 .copyright {
@@ -46,8 +46,12 @@ nav {
   min-height: 80px;
 }
 
-nav ul li {
-  color: #8bcdbd;
+nav ul li a {
+  color: #0080cd;
+}
+
+nav ul .active {
+  color: #ff8f02;
 }
 
 .logo {
@@ -64,6 +68,7 @@ nav ul li {
 }
 
 .title-menu h1 {
+  font-family: JotRegular, Ariel;
   padding-left: 40px;
 }
 
@@ -173,13 +178,29 @@ nav ul li {
   padding: 40px !important;
 }
 
+.slider-text-stores {
+  align-items: center;
+  background-color: #ffae02;
+  padding: 100px !important;
+}
+
+.slider-text-stores h2 {
+  font-family: JotRegular;
+  padding: 0px 40px;
+}
+
+.slider-text-stores h3 {
+  color: #fff;
+  padding: 0px 40px;
+}
+
 .slider-nav {
   width: 140px;
   color: #fff;
 }
 
 .slider-text img {
-  height: 200px;
+  height: 220px;
   -webkit-filter: drop-shadow(2px 2px 2px #222);
 }
 
@@ -236,6 +257,33 @@ nav ul li {
 .slider-image .item img {
   display: block;
   width: 100%;
+}
+
+.thumbnail-img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.thumbnail-img img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.store-name {
+  /*display: none;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.store-name:hover {
+  display: block;
 }
 
 @media screen and (max-width: 768px) {

@@ -21,6 +21,7 @@ Route::get('/', [MainController::class,'index'])->name('index');
 Route::get('/stores', [MainController::class,'stores'])->name('stores');
 Route::get('/map', [MainController::class,'map'])->name('map');
 Route::get('/news', [MainController::class,'news'])->name('news');
+Route::get('/store/{id}', [MainController::class,'store'])->name('store');
 //Route::get('/welcome', 'MainController@index')->name('index');
 //Route::get('/', function () {
 //    return view('front');

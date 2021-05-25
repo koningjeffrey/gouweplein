@@ -31,12 +31,12 @@
     <div class="title-menu">
         <h1>Centrum Waddinxveen</h1>
         <ul class="nav-links d-flex justify-content-between" id="nav-links">
-            <li><a href="/stores">winkels</a></li>
-            <li><a href="/map">plattegrond</a></li>
-            <li><a href="/news">nieuws & agenda</a></li>
-            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">bereikbaarheid</a></li>
-            <li><a href="/about">over gouweplein</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><a href="/stores" class="{{request()->is('stores')?"active":""}}">winkels</a></li>
+            <li><a href="/map" class="{{request()->is('map')?"active":""}}">plattegrond</a></li>
+            <li><a href="/news" class="{{request()->is('news')?"active":""}}">nieuws & agenda</a></li>
+            <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="{{request()->is('accessability')?"active":""}}">bereikbaarheid</a></li>
+            <li><a href="/about" class="{{request()->is('about')?"active":""}}">over gouweplein</a></li>
+            <li><a href="/contact" class="{{request()->is('contact')?"active":""}}">Contact</a></li>
         </ul>
     </div>
         <div class="burger" id="toggleNav">
@@ -51,6 +51,8 @@
             @yield('usp')
             @yield('intro')
             @yield('news')
+            @yield('seporator')
+            @yield('more-content')
                 </div>
 <div class="container">
     <div class="d-flex justify-content-between footer">
