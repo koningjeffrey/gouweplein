@@ -138,7 +138,7 @@
     <div class="flex-column justify-content-center intro">
         <div class="container">
         <div class="d-flex justify-content-start">
-                   <h2>Gouweplein</h2><h2 style="color:#298b6e;">Centrum Waddinxveen</h2>
+                   <h2>Gouweplein</h2> <h2 style="color:#298b6e;">Centrum Waddinxveen</h2>
         </div>
         <div class="intro-body">
             <p>
